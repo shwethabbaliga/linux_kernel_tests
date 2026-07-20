@@ -8,4 +8,9 @@ class main_class:
         print (status.returncode)
         if not status.returncode: 
             print (f"command execution is perfect o/p is following {status.stdout}")
+            return status.stdout
+        else :
+            return status.stderr
+    
+            
 
