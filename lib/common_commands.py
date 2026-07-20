@@ -10,6 +10,7 @@ class common_commands(lib_main.main_class):
         print("get ur changelog of the package here")
 
     def dmesg_log(self,grep_mesg = ""):
+        print (grep_mesg)
         if grep_mesg == "":
             status = self.run_command("dmesg")
         else :
