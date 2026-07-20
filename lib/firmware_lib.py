@@ -7,5 +7,3 @@ class firmware_validation:
         
     def firmware_version(self):
         pass
-
-    def 
