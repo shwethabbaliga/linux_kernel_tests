@@ -14,11 +14,10 @@ class SB_basic_commands(common_commands):
             print ("secureboot is disabled")
 
 
-    if state :
 
-        def dmesg_lockdownstatus(self):
-            lockdown_dmesg = self.dmesg_log("Kernel is locked down from EFI Secure Boot")
-            print (lockdown_dmesg)
+    def dmesg_lockdownstatus(self):
+        lockdown_dmesg = self.dmesg_log("Kernel is locked down from EFI Secure Boot")
+        print (lockdown_dmesg)
     
 
 sb_object = SB_basic_commands()
