@@ -14,7 +14,7 @@ class common_commands(lib_main.main_class):
         if grep_mesg == "":
             status = self.run_command("dmesg")
         else :
-            status = self.run_command(f"dmesg | grep "{grep_mesg}"")
+            status = self.run_command(f'dmesg | grep "{grep_mesg}"')
         return status
     
 
