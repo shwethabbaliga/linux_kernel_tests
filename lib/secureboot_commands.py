@@ -1,7 +1,7 @@
 from lib_main import main_class
 from common_commands import common_commands
 
-class SB_basic_commands(main_class,common_commands):
+class SB_basic_commands(common_commands):
     state = 0 
     
     def __init__(self):
