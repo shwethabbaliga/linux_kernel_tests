@@ -6,5 +6,5 @@ class main_class:
         status = subprocess.run(command,shell=True,capture_output=True,text=True)
         print (command)
         if status.returncode: 
-            pass
+            print (f"command execution is perfect o/p is following {status.stdout}")
 
