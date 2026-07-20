@@ -9,13 +9,13 @@ class common_commands(lib_main.main_class):
     def changelog(self,package_name):
         print("get ur changelog of the package here")
 
-    def dmesg_log(self):
-        status = self.run_command("dmesg")
-        return status.stdout
-    
-    def dmesg_grep_log(self,grep_mesg):
-        status = self.run_command(f"dmesg | grep {grep_mesg}")
+    def dmesg_log(self,grep_mseg = ""):
+        if grep_mseg == "":
+            status = self.run_command("dmesg")
+        else :
+            status = self.run_command(f"dmesg | grep {grep_mseg}")
         return status
+    
 
     def journalctl_log(self,**kwargs):
         pass
